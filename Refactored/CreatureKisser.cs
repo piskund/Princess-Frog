@@ -1,15 +1,12 @@
-﻿namespace PrincessFrog.Refactored1
+﻿namespace PrincessFrog.Refactored
 {
     public class CreatureKisser : IKisser
     {
         private Creature CreatureForKiss { get; set; }
 
-        private bool IsPrincess 
-        { 
-            get { return this.CreatureForKiss is Princess; } 
-        }
+        private bool IsPrincess => this.CreatureForKiss is Princess;
 
-        public CreatureKisser()
+	    public CreatureKisser()
         {
             this.CreatureForKiss = new Frog();
         }

@@ -1,4 +1,4 @@
-﻿namespace PrincessFrog.Refactored1
+﻿namespace PrincessFrog.Refactored
 {
     public abstract class Creature
     {

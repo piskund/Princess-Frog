@@ -1,4 +1,4 @@
-﻿using PrincessFrog.Refactored1;
+﻿using PrincessFrog.Refactored;
 
 namespace PrincessFrog.FactoryMethod
 {

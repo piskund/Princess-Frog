@@ -1,6 +1,6 @@
-﻿namespace PrincessFrog
+﻿namespace PrincessFrogPatterLib.Simple
 {
-    public class PrincessFrogKisser : IKisser
+    public class CreatureKisser
     {
         private bool IsPrincess { get; set; }
 
