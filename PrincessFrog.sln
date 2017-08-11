@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrincessFrog", "PrincessFro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrincessFrog.UnitTests", "PrincessFrog.UnitTests\PrincessFrog.UnitTests.csproj", "{17FCD424-4C83-48DF-AD18-1B6E3690BB37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrincessFrogPatternLib", "PrincessFrogPatterLib\PrincessFrogPatternLib.csproj", "{4F8C3D7A-4F80-4F74-A66E-73D8880F3FA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrincessFrogPatternLib", "PrincessFrogPatternLib\PrincessFrogPatternLib.csproj", "{4F8C3D7A-4F80-4F74-A66E-73D8880F3FA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

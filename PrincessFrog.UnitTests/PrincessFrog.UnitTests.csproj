@@ -70,7 +70,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PrincessFrogPatterLib\PrincessFrogPatternLib.csproj">
+    <ProjectReference Include="..\PrincessFrogPatternLib\PrincessFrogPatternLib.csproj">
       <Project>{4f8c3d7a-4f80-4f74-a66e-73d8880f3fa2}</Project>
       <Name>PrincessFrogPatternLib</Name>
     </ProjectReference>
