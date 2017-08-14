@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PrincessFrogPatterLib.Strategy.Interfaces
+namespace PrincessFrogPatterLib.DomainModel.Interfaces
 {
     public interface IEntity
     {

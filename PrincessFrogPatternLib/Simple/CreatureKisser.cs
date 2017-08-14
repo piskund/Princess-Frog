@@ -6,12 +6,12 @@
 
         public void Kiss()
         {
-            this.IsPrincess = !this.IsPrincess;
+            IsPrincess = !IsPrincess;
         }
 
         public string GetSomeNoise()
         {
-            if (this.IsPrincess)
+            if (IsPrincess)
             {
                 return "Hello!";
             }

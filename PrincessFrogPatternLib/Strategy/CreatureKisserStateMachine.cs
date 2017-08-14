@@ -1,15 +1,16 @@
 ﻿using PrincessFrogPatterLib.DomainModel;
+using PrincessFrogPatterLib.DomainModel.Abstractions;
 using PrincessFrogPatterLib.Strategy.Strategies;
 
 namespace PrincessFrogPatterLib.Strategy
 {
-	public class CreatureKisserStateMachine
+	public class CreatureKisserStateMachine : ICreatureKisser
 	{
-		public readonly Creature CurrentCreature;
+		public readonly SpeakingCreature CurrentCreature;
 
 	    public CreatureKisserStateMachine()
 	    {
-	        CurrentCreature = new Creature();
+	        CurrentCreature = new SpeakingCreature();
 	    }
 
         public void Kiss()

@@ -1,19 +1,20 @@
 ﻿using PrincessFrogPatterLib.DomainModel;
+using PrincessFrogPatterLib.DomainModel.Abstractions;
 using PrincessFrogPatterLib.DomainModel.Interfaces;
 using PrincessFrogPatterLib.Strategy.Interfaces;
 using PrincessFrogPatterLib.Strategy.Strategies;
 
 namespace PrincessFrogPatterLib.Strategy
 {
-    public class Creature : BaseEntity, ISpeaking
+    public class SpeakingCreature : BaseEntity, ISpeakingCreature
     {
         public ICreatureStrategy CurrentStrategy { get; set; }
 
-        public Creature() : this(new FrogStrategy())
+        public SpeakingCreature() : this(new FrogStrategy())
         {
         }
 
-        public Creature(ICreatureStrategy strategy)
+        public SpeakingCreature(ICreatureStrategy strategy)
         {
             CurrentStrategy = strategy;
         }

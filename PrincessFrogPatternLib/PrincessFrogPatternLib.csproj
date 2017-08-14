@@ -43,26 +43,29 @@
     <Compile Include="DomainModel\Creatures\Cat.cs" />
     <Compile Include="DomainModel\CreatureType.cs" />
     <Compile Include="DomainModel\Creatures\Frog.cs" />
-    <Compile Include="DomainModel\Interfaces\ICreature.cs" />
-    <Compile Include="DomainModel\Interfaces\ISpeaking.cs" />
     <Compile Include="DomainModel\Creatures\Princess.cs" />
     <Compile Include="DomainModel\CreatureKisser.cs" />
-    <Compile Include="DomainModel\Interfaces\ISpeakingCreature.cs" />
+    <Compile Include="DomainModel\Abstractions\ISpeakingCreature.cs" />
     <Compile Include="NewRequirements\CreatureType.cs" />
     <Compile Include="NewRequirements\CreatureKisser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simple\CreatureKisser.cs" />
-    <Compile Include="Strategy\BaseEntity.cs" />
+    <Compile Include="DomainModel\Abstractions\BaseEntity.cs" />
+    <Compile Include="DomainModel\Abstractions\ICreatureKisser.cs" />
+    <Compile Include="State\Interfaces\ICreatureState.cs" />
+    <Compile Include="State\Interfaces\IStateContext.cs" />
+    <Compile Include="State\SpeakingCreatureWithState.cs" />
+    <Compile Include="State\States\CatState.cs" />
+    <Compile Include="State\States\FrogState.cs" />
+    <Compile Include="State\States\PrincessState.cs" />
     <Compile Include="Strategy\Strategies\CatStrategy.cs" />
-    <Compile Include="Strategy\Creature.cs" />
+    <Compile Include="Strategy\SpeakingCreature.cs" />
     <Compile Include="Strategy\CreatureKisserStateMachine.cs" />
     <Compile Include="Strategy\Strategies\FrogStrategy.cs" />
     <Compile Include="Strategy\Interfaces\ICreatureStrategy.cs" />
-    <Compile Include="Strategy\Interfaces\IEntity.cs" />
+    <Compile Include="DomainModel\Abstractions\IEntity.cs" />
     <Compile Include="Strategy\Strategies\PrincessStrategy.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="State\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

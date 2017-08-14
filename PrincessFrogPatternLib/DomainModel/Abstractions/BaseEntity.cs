@@ -1,7 +1,7 @@
 ﻿using System;
-using PrincessFrogPatterLib.Strategy.Interfaces;
+using PrincessFrogPatterLib.DomainModel.Interfaces;
 
-namespace PrincessFrogPatterLib.Strategy
+namespace PrincessFrogPatterLib.DomainModel.Abstractions
 {
     public abstract class BaseEntity : IEntity
     {
