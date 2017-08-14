@@ -1,8 +1,11 @@
-﻿namespace PrincessFrogPatterLib.DomainModel
+﻿using PrincessFrogPatterLib.DomainModel.Creatures;
+using PrincessFrogPatterLib.DomainModel.Interfaces;
+
+namespace PrincessFrogPatterLib.DomainModel
 {
 	public class CreatureKisser
 	{
-		private INoisyCreature CurrentCreature { get; set; }
+		private ISpeakingCreature CurrentCreature { get; set; }
 
 		public CreatureKisser()
 		{

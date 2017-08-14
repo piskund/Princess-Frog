@@ -40,16 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainModel\Cat.cs" />
+    <Compile Include="DomainModel\Creatures\Cat.cs" />
     <Compile Include="DomainModel\CreatureType.cs" />
-    <Compile Include="DomainModel\Frog.cs" />
-    <Compile Include="DomainModel\INoisyCreature.cs" />
-    <Compile Include="DomainModel\Princess.cs" />
+    <Compile Include="DomainModel\Creatures\Frog.cs" />
+    <Compile Include="DomainModel\Interfaces\ICreature.cs" />
+    <Compile Include="DomainModel\Interfaces\ISpeaking.cs" />
+    <Compile Include="DomainModel\Creatures\Princess.cs" />
     <Compile Include="DomainModel\CreatureKisser.cs" />
+    <Compile Include="DomainModel\Interfaces\ISpeakingCreature.cs" />
     <Compile Include="NewRequirements\CreatureType.cs" />
     <Compile Include="NewRequirements\CreatureKisser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simple\CreatureKisser.cs" />
+    <Compile Include="Strategy\BaseEntity.cs" />
+    <Compile Include="Strategy\Strategies\CatStrategy.cs" />
+    <Compile Include="Strategy\Creature.cs" />
+    <Compile Include="Strategy\CreatureKisserStateMachine.cs" />
+    <Compile Include="Strategy\Strategies\FrogStrategy.cs" />
+    <Compile Include="Strategy\Interfaces\ICreatureStrategy.cs" />
+    <Compile Include="Strategy\Interfaces\IEntity.cs" />
+    <Compile Include="Strategy\Strategies\PrincessStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="State\" />

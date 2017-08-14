@@ -1,26 +1,24 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
-using PrincessFrogPatterLib.Simple;
-//using PrincessFrogPatterLib.NewRequirements;
-//using PrincessFrogPatterLib.DomainModel;
+using PrincessFrogPatterLib.Strategy;
 
 namespace PrincessFrog.UnitTests
 {
 	[TestFixture]
-	public class CreatureKisserTest
+	public class StrategyTests
 	{
 		[Test]
 		public void KissedEvenShouldSayRibbit([Range(0, 8, 2)]int numberOfKiss)
 		{
 			// Arrange
-			var sut = new CreatureKisser();
+			var sut = new CreatureKisserStateMachine();
 			for (int i = 0; i < numberOfKiss; i++)
 			{
 				sut.Kiss();
 			}
 
 			// Act
-			var result = sut.GetSomeNoise();
+		    var result = sut.CurrentCreature.SaySomething();
 
 			// Assert
 			result.Should().Be("Ribbit!");
@@ -30,14 +28,14 @@ namespace PrincessFrog.UnitTests
 		public void KissedOddShouldSayHello([Range(1, 9, 2)]int numberOfKiss)
 		{
 			// Arrange
-			var sut = new CreatureKisser();
+			var sut = new CreatureKisserStateMachine();
 			for (int i = 0; i < numberOfKiss; i++)
 			{
 				sut.Kiss();
 			}
 
 			// Act
-			var result = sut.GetSomeNoise();
+		    var result = sut.CurrentCreature.SaySomething();
 
 			// Assert
 			result.Should().Be("Hello!");
