@@ -46,7 +46,7 @@
     <Compile Include="DomainModel\Creatures\Princess.cs" />
     <Compile Include="DomainModel\CreatureKisser.cs" />
     <Compile Include="DomainModel\Abstractions\ISpeakingCreature.cs" />
-    <Compile Include="Flyweight\StateFactory.cs" />
+    <Compile Include="Flyweight\StrategyFactory.cs" />
     <Compile Include="NewRequirements\CreatureType.cs" />
     <Compile Include="NewRequirements\CreatureKisser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

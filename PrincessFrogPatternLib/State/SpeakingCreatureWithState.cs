@@ -8,7 +8,7 @@ namespace PrincessFrogPatterLib.State
 {
 	public class SpeakingCreatureWithState : ISpeakingCreature, IStateContext, ICreatureKisser
 	{
-		public ICreatureState CurrentState { get; set; }
+		private ICreatureState CurrentState { get; set; }
 
 		public SpeakingCreatureWithState()
 		{

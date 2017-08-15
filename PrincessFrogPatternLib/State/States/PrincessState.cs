@@ -1,6 +1,4 @@
-﻿using PrincessFrogPatterLib.DomainModel;
-using PrincessFrogPatterLib.Flyweight;
-using PrincessFrogPatterLib.State.Interfaces;
+﻿using PrincessFrogPatterLib.State.Interfaces;
 using PrincessFrogPatterLib.Strategy.Strategies;
 
 namespace PrincessFrogPatterLib.State.States
@@ -16,8 +14,7 @@ namespace PrincessFrogPatterLib.State.States
 
 		public void Kiss()
 		{
-			//Context.SetState(new FrogState(Context));
-			Context.SetState(StateFactory.GetFlyweightState(CreatureType.Frog, Context));
+			Context.SetState(new FrogState(Context));
 		}
 
 		public void Pet()

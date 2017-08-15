@@ -1,6 +1,4 @@
-﻿using PrincessFrogPatterLib.DomainModel;
-using PrincessFrogPatterLib.Flyweight;
-using PrincessFrogPatterLib.State.Interfaces;
+﻿using PrincessFrogPatterLib.State.Interfaces;
 using PrincessFrogPatterLib.Strategy.Strategies;
 
 namespace PrincessFrogPatterLib.State.States
@@ -16,14 +14,12 @@ namespace PrincessFrogPatterLib.State.States
 
 		public void Kiss()
 		{
-			//Context.SetState(new PrincessState(Context));
-			Context.SetState(StateFactory.GetFlyweightState(CreatureType.Princess, Context));
+			Context.SetState(new PrincessState(Context));
 		}
 
 		public void Pet()
 		{
-			//Context.SetState(new CatState(Context));
-			Context.SetState(StateFactory.GetFlyweightState(CreatureType.Cat, Context));
+			Context.SetState(new CatState(Context));
 		}
 
 		public void Kick()
